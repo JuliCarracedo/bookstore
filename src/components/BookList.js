@@ -5,7 +5,6 @@ const BookList = (props) => {
 
   return (
     <div className="list">
-      {console.log(books)}
       {
         books.map((book, index) => (
           <div key={book.title} className="list-item" id={index}>
