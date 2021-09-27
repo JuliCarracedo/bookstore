@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router, Route, Switch, NavLink,
 } from 'react-router-dom';
 import Home from './components/Home';
+import Categories from './components/Categories';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
 
       <Switch>
         <Route exact path="/"><Home /></Route>
-        <Route path="/categories"><p>Under construction</p></Route>
+        <Route path="/categories"><Categories /></Route>
       </Switch>
 
     </Router>
