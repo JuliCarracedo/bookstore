@@ -8,7 +8,7 @@ import styles from './index.css';
 import store from './redux/configureStore';
 
 ReactDOM.render(
-  <Provider store={store.getState()}>
+  <Provider store={store}>
     <React.StrictMode>
       <App />
     </React.StrictMode>
