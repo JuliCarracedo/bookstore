@@ -19,7 +19,7 @@ export const removeBook = (title) => ({
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return ([...state, action.title]);
+      return ([...state, action.book]);
     case REMOVE_BOOK:
       return (state.filter((book) => book.title !== action.title));
     default:

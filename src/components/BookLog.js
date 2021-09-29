@@ -7,7 +7,8 @@ const BookLog = (props) => {
   const {
     title, author, category, progress, current,
   } = book;
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
+
   const deleteBook = (e) => {
     e.preventDefault();
     dispatch(removeBook(title));
