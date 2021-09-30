@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
+/* eslint-disable camelcase */
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeAsync } from '../redux/books/books';
 
 const BookLog = (props) => {
   const { book, index } = props;
   const {
-    title, author, category, progress, current,
+    title, author, category, progress, current, item_id,
   } = book;
   const dispatch = useDispatch();
 
   const deleteBook = (e) => {
     e.preventDefault();
-    dispatch(removeBook(title));
+    dispatch(removeAsync(item_id));
   };
 
   return (
