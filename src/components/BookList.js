@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import BookLog from './BookLog';
 
 const BookList = (props) => {
   const { books } = props;
@@ -7,32 +8,7 @@ const BookList = (props) => {
     <div className="list">
       {
         books.map((book, index) => (
-          <div key={book.title} className="list-item" id={index}>
-            <div className="left">
-              <p>{book.category}</p>
-              <h2>{book.title}</h2>
-              <p>{book.author}</p>
-              <div className="interact">
-                <span>Comment </span>
-                <span>Remove </span>
-                <span>Edit</span>
-              </div>
-
-            </div>
-            <div className="middle">
-              <p>
-                {book.progress}
-                {' '}
-                Completed
-              </p>
-            </div>
-            <div className="right">
-              <p>Current Chapter</p>
-              <p>{book.current}</p>
-              <button type="button">UPDATE PROGRESS</button>
-            </div>
-
-          </div>
+          <BookLog key={book.item_id} book={book} index={index} />
         ))
     }
     </div>

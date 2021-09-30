@@ -39,12 +39,13 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 
 - Run ````npm install``` in your editor`s console line to install dependencies. 
+- Run ````npm start``` in your editor`s console line to run locally. 
 
 ### Usage
 
-- Run ````npm start``` in your editor`s console line to run locally. 
-
-
+- Feel free to add books through the form and check their creation in console. They will be displayed and stored in a remote API.
+- Use the Remove button to get rid of a specific book. It will be removed from the API too.
+- On load, the store will be filled with any books present in the API's storage.
 
 ## Author
 
