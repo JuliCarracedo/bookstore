@@ -17,7 +17,7 @@ const Home = () => {
 
   const books = useSelector((state) => state.booksReducer);
   return (
-    <div>
+    <div className="content">
       <BookList books={books || []} />
       <BookForm />
     </div>
