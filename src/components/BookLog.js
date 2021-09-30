@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
 import { useDispatch } from 'react-redux';
-import { removeAsync } from '../redux/books/books';
+import { removeAsync } from '../redux/books/API';
 
 const BookLog = (props) => {
   const { book, index } = props;

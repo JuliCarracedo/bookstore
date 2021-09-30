@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import BookLog from './BookLog';
 
 const BookList = (props) => {

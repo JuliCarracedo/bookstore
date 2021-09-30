@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import BookList from './BookList';
 import BookForm from './BookForm';
-import { loadAsync } from '../redux/books/books';
+import { loadAsync } from '../redux/books/API';
 
 const Home = () => {
   const dispatch = useDispatch();
