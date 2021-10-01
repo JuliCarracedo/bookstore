@@ -6,7 +6,7 @@ import { removeAsync } from '../redux/books/API';
 const BookLog = (props) => {
   const { book, index } = props;
   const {
-    title, author, category, progress, current, item_id,
+    title, category, item_id,
   } = book;
   const dispatch = useDispatch();
 
@@ -18,28 +18,30 @@ const BookLog = (props) => {
   return (
     <div className="list-item" id={index}>
       <div className="left">
-        <p>{category}</p>
-        <h2>{title}</h2>
-        <p>{author}</p>
+        <p className="category">{category}</p>
+        <h2 className="title">{title}</h2>
+        <p className="author"> Julian Carracedo</p>
         <div className="interact">
-          <span>Comment </span>
-          <button type="button" onClick={(e) => deleteBook(e)}>Remove </button>
-          <span>Edit</span>
+          <button className="interact-btn" type="button"> Comment </button>
+          <button className="interact-btn sep" type="button" onClick={(e) => deleteBook(e)}>Remove </button>
+          <button className="interact-btn sep" type="button"> Edit </button>
         </div>
 
       </div>
       <div className="middle">
-        <p>
-          {progress}
-          {' '}
-          Completed
-        </p>
+        <div className="progress-wheel" />
+        <div className="progress">
+          <p className="percentage">100%</p>
+          <p className="completed">Completed</p>
+        </div>
       </div>
 
+      <div className="line" />
+
       <div className="right">
-        <p>Current Chapter</p>
-        <p>{current}</p>
-        <button type="button">UPDATE PROGRESS</button>
+        <p className="current-chapter">Current Chapter</p>
+        <p className="chapter">Chapter 1</p>
+        <button className="update" type="button">UPDATE PROGRESS</button>
       </div>
 
     </div>
