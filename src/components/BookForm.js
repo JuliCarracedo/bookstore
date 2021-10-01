@@ -20,17 +20,18 @@ const BookForm = () => {
 
   return (
     <div id="form">
-      <h2>Add new Book</h2>
-      <input type="text" id="title" name="title" placeholder="Book Title" onChange={(evt) => setTitle(evt.target.value)} />
-      <select id="category" name="category" defaultValue="Category" onChange={(evt) => setCategory(evt.target.value)}>
-        <option disabled>Category</option>
-        <option value="Thriller">Thriller</option>
-        <option value="Romance">Romance</option>
-        <option value="Action">Action</option>
-      </select>
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <div className="fields">
+        <input type="text" className="form-title-2" id="title" name="title" placeholder="Book Title" onChange={(evt) => setTitle(evt.target.value)} />
+        <select id="category" className="form-category" name="category" defaultValue="Category" onChange={(evt) => setCategory(evt.target.value)}>
+          <option disabled>Category</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Action">Action</option>
+        </select>
 
-      <button type="button" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
-
+        <button type="button" className="form-submit" onClick={(e) => submitBookToStore(e)}>ADD BOOK</button>
+      </div>
     </div>
   );
 };
