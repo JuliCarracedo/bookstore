@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 html {
-  padding: none;
+  padding: 0;
 }
 
 .logo-link {
@@ -25,7 +25,7 @@ html {
   width: 99vw;
 }
 
-.links{
+.links {
   display: flex;
   width: 12vw;
   justify-content: space-between;
@@ -69,6 +69,6 @@ html {
   fill: #0290ff;
 }
 
-.list{
+.list {
   width: 50vw;
 }
