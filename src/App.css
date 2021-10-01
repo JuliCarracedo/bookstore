@@ -9,6 +9,7 @@ html {
   background-color: rgba(1, 1, 1, 0);
   border: none;
   margin-right: 3vw;
+  margin-left: 3vw;
   color: #0290ff;
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,16 +21,22 @@ html {
   border-bottom-color: #e8e8e8;
   border-bottom-width: 2px;
   border-bottom-style: solid;
+  justify-content: center;
   height: 5.875rem;
   align-items: center;
-  width: 99vw;
+  width: 100%;
+}
+
+.inner-nav {
+  width: 81vw;
+  display: flex;
 }
 
 .links {
   display: flex;
   width: 12vw;
-  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
   font-weight: 400;
 }
 
@@ -56,13 +63,12 @@ html {
   align-items: center;
   height: 1.2rem;
   width: 1.2rem;
-  justify-self: end;
   padding: 10px;
   border-color: #e8e8e8;
   border-width: 1px;
   border-style: solid;
   border-radius: 50%;
-  margin-left: 58vw;
+  margin-left: 38vw
 }
 
 .icon {
@@ -71,4 +77,11 @@ html {
 
 .list {
   width: 50vw;
+}
+
+.horizontal {
+  width: 100vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-bottom: solid 2px #e8e8e8;
 }

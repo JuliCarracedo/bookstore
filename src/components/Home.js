@@ -19,6 +19,7 @@ const Home = () => {
   return (
     <div className="content">
       <BookList books={books || []} />
+      <div className="horizontal" />
       <BookForm />
     </div>
   );
