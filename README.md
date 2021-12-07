@@ -21,6 +21,10 @@ Additional description about the project and its features.
     - VSCodde
     - Git & GitHub
 
+## Live Demo
+
+- Deployed on Netlify: https://agitated-meitner-4cf10a.netlify.app/
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
